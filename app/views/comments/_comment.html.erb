@@ -8,7 +8,6 @@
         <h5 class="mt-0">
           <%= link_to comment.author.username, user_path(comment.author.username), class: "text-dark link-underline-dark link-underline-opacity-0 link-underline-opacity-100-hover" %>
         </h5>
-
         <div>
           <% if comment.author == current_user %>
             <%= link_to edit_comment_path(comment), class: "btn btn-link btn-sm text-muted", remote: true do %>
